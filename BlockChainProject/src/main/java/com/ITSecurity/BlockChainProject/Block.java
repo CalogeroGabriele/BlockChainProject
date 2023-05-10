@@ -83,7 +83,7 @@ public class Block {
         );
     }
 
-    //Classe stativca per la creazione del blocco di genesi con "last hash" nullo
+    //Classe statica per la creazione del blocco di genesi con "last hash" nullo
     public static Block createGenesisBlock(String[] data){
         int nonce = 0;
         final int difficulty = 3;
@@ -104,7 +104,7 @@ public class Block {
         long timestamp;
         int difficulty;
 
-        //Hash dell ultimo blocco nella blockchain
+        //Hash dell' ultimo blocco nella blockchain
         String lastHash = lastBlock.getHash();
 
         //Esegui il loop finchè i caratterri dell'hash generato non corrispondono alla difficoltà scelta
